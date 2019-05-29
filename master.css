@@ -1,0 +1,39 @@
+*{
+ margin:0;
+ padding:0;
+}
+/*imposto un viewport larghezza e altezza*/
+.general{
+ width:100vw;
+ height:100vh;
+}
+/*questo sarà il layout delle 3 sezioni */
+.setlayotu{
+ width:100vw;
+ height:33.33vh;
+ position:relative;
+ border:solid 1px white;
+ box-sizing: border-box;
+}
+/*setto le impostazioni per
+contenere le immagini a pieno schermo su ogni
+sezione ed inserisco una opacità alle imaggini*/
+img{
+ position: absolute;
+ background-size:cover;
+ opacity:0.6;
+ width:100%;
+ height:100%;
+}
+/*voglio che il mio testa rimanga centrato
+su ogni immagine anche al ridimensionamento della pagina
+da parte dell'utente*/
+text{
+ position:absolute;
+ font-size:3em;
+ font-family:Lucida,monospace,arial;
+ color:white;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+}
